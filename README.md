@@ -67,7 +67,9 @@ To test the model in a benchmarking environment (after proper setup):
 terminal-bench run --dataset ./tests --model .
 ```
 Make sure the dataset and model follow the required directory structure for terminal-bench.
-🧠 Notes
+
+🧠 Notes:
+
 The agent must write predictions to workdir/sol.csv
 
 The grader expects data/iris.csv and the prediction file to exist
