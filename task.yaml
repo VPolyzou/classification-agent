@@ -1,0 +1,38 @@
+name: classification-agent
+description: >
+  Train a decision tree classifier on the first 80% of the Iris dataset and
+  predict the remaining 20%. Save predictions to /workdir/sol.csv.
+
+prompt: |
+  You are given the Iris dataset at classification-agent/data/iris.csv.
+  Train a decision tree classifier using the first 80% of the rows and predict
+  the remaining 20%. Save your predictions (one label per row) to /workdir/sol.csv
+  in a single column named 'prediction'.
+
+  You may use pandas and scikit-learn.
+
+inputs:
+  - name: iris.csv
+    description: The Iris dataset in CSV format.
+    type: file
+    path: classification-agent/data/iris.csv
+
+outputs:
+  - name: sol.csv
+    description: The predictions for the species of the last 20% of the rows in the dataset.
+    type: file
+    path: classification-agent/workdir/sol.csv
+
+grader:
+  script: grader.py
+  entrypoint: grade
+
+agent:
+  script: agent.py
+  entrypoint: main
+
+metadata: 
+  difficulty: easy
+  category: classification
+  tags: [pandas, sklearn, decision-tree]
+  

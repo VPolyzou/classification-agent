@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# VSCode config
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Terminal-Bench
+runs/
+*.log
+sol.csv
+
+# Docker
+*.tar
+*.pid
+*.sock
+/workdir/
