@@ -6,19 +6,13 @@ This project implements a classification agent for the classic **Iris dataset**.
 - a **grader** that evaluates the model's predictions and returns a score.
   
 ## 📂 Project Structure
-agent.py → The classifier script (generates predictions)
-
-grader.py → The evaluation script (computes accuracy)
-
-data/iris.csv → The dataset used for training/testing
-
-workdir/sol.csv → Predictions saved by the agent
-
-requirements.txt → Python dependencies
-
-Dockerfile → Docker configuration to run the agent
-
-task.yaml → Task config for terminal-bench
+- agent.py → The classifier script (generates predictions)
+- grader.py → The evaluation script (computes accuracy)
+- data/iris.csv → The dataset used for training/testing
+- workdir/sol.csv → Predictions saved by the agent
+- requirements.txt → Python dependencies
+- Dockerfile → Docker configuration to run the agent
+- task.yaml → Task config for terminal-bench
 
 ## 🚀 How to Run
 
@@ -85,9 +79,9 @@ Make sure the dataset and model follow the required directory structure for term
 
 🧠 Notes:
 
-The agent must write predictions to workdir/sol.csv
+- The agent must write predictions to workdir/sol.csv
 
-The grader expects data/iris.csv and the prediction file to exist
+- The grader expects data/iris.csv and the prediction file to exist
 
-You can evaluate locally using only Python, or inside Docker
+- You can evaluate locally using only Python, or inside Docker
 
