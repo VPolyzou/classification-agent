@@ -30,10 +30,6 @@ The grader compares predictions (workdir/sol.csv) with ground truth labels in da
 python3 grader.py
 ```
 Example output:
-
-json
-Copy
-Edit
 {
   "score": 0.9667,
   "feedback": "Accuracy: 0.9667"
